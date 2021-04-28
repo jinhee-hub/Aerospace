@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Drawingapp</string>
+    <string name="title_activity_nevigation">NevigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_header">Log In</string>
+    <string name="painter_profile">Painter Profile</string>
+    <string name="painter_name">Name</string>
+    <string name="enter_name">Enter painter\'s name</string>
+    <string name="fav_color">Painter\'s favorite color</string>
+    <string name="enter_color">Enter favorite color</string>
+    <string name="create">Create Profile</string>
+    <string name="update">Update Profile</string>
+    <string name="show_color">Show favorite color</string>
+    <string name="delete">Delete profile</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="create_profile">Create New Profile</string>
+    <string name="Home">Home</string>
+    <string name="Draw">Draw</string>
+    <string name="Gallery">Gallery</string>
+    <string name="Share">Share</string>
+    <string name="Back">Back</string>
+    <string name="Pen">Pen</string>
+    <string name="Erase">Erase</string>
+    <string name="Save">Save</string>
+    <string name="Export">Export</string>
+    <string name="bgd">Bgd</string>
+    <string name="language">language</string>
+    <string name="korean">Korean</string>
+    <string name="english">English</string>
+    <string name="chinese">Chinese</string>
+    <string name="corg">Camera or Gallery?</string>
+    <string name="cam">Camera</string>
+    <string name="cancel">Cancel</string>
+    <string name="success">Success</string>
+    <string name="fail">fail</string>
+    <string name="ap">allow permission</string>
+    <string name="dp">deny permission</string>
+    <string name="ok">OK</string>
+    <string name="camautho">needs camera authorization</string>
+    <string name="camdeny">denied camera</string>
+    <string name="qdg">Save you drawing to the gallery?</string>
+    <string name="qdd">Export your drawing to your device?</string>
+    <string name="delete_image">Delete</string>
+
+
+
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="menu_gallery" translatable="false">Gallery</string>
+    <string name="menu_painter" translatable="false">Painter</string>
+    <string name="menu_slideshow" translatable="false">Slideshow</string>
+    <string name="cs">Created successfully</string>
+    <string name="nae">Name already exists</string>
+    <string name="nb">Should not left anything blank</string>
+    <string name="us">Update successfully</string>
+    <string name="nde">Name doesn\'t exist</string>
+    <string name="fc">favorite color is</string>
+    <string name="os">Operation success</string>
+    <string name="ci">No network connection! Retry later.</string>
+    <string name="ed">Error detected</string>
+    <string name="pi">Password is incorrect!</string>
+    <string name="welcome">Welcome, </string>
+    <string name="logout">Log out</string>
+    <string name="nonetlogin">No network connection. Do you want to continue as guest?</string>
+    <string name="guest">Guest</string>
+    <string name="nonetexport">No network connection. Do you want to export to phone instead?</string>
+
+
+</resources>

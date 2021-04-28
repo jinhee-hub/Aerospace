@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">그림어플</string>
+    <string name="action_settings">설정</string>
+    <string name="Home">홈</string>
+    <string name="Draw">그리기</string>
+    <string name="Gallery">갤러리</string>
+    <string name="Share">공유</string>
+    <string name="Back">뒤로</string>
+    <string name="Pen">펜</string>
+    <string name="Erase">지우개</string>
+    <string name="Save">저장</string>
+    <string name="Export">추출</string>
+    <string name="bgd">배경</string>
+    <string name="create">프로필 만들기</string>
+    <string name="update">프로필 재설정</string>
+    <string name="show_color">색깔</string>
+    <string name="delete">프로필 삭제</string>
+    <string name="enter_color">좋아하는 색을 입력하세요</string>
+    <string name="fav_color">좋아하는 색</string>
+    <string name="enter_name">이름을 입력하세요</string>
+    <string name="painter_name">이름</string>
+    <string name="painter_profile">프로필</string>
+    <string name="language">언어변경</string>
+    <string name="korean">한국어</string>
+    <string name="english">영어</string>
+    <string name="chinese">중국어</string>
+    <string name="corg">어디서 불러오시겠습니까?</string>
+    <string name="cam">카메라</string>
+    <string name="cancel">취소</string>
+    <string name="success">성공</string>
+    <string name="fail">실패</string>
+    <string name="ap">사용 허용</string>
+    <string name="dp">사용 거부</string>
+    <string name="ok">네</string>
+    <string name="camautho">카메라 권한이 필요합니다</string>
+    <string name="camdeny">카메라 거부</string>
+    <string name="qdg">갤러리에 그림을 저장할까요?</string>
+    <string name="qdd">핸드폰에 그림을 저장할까요?</string>
+
+    <string name="cs">생성 완료</string>
+    <string name="nae">이미 존재하는 이름입니다</string>
+    <string name="nb">빈 공간이 있어서는 안됩니다</string>
+    <string name="us">업데이트 완료</string>
+    <string name="nde">이름이 존재하지 않습니다</string>
+    <string name="fc">좋아하는 색깔은</string>
+    <string name="os">삭제 완료</string>
+    <string name="ed">에러 발견</string>
+    <string name="pi">비밀번호가 틀렸습니다</string>
+    <string name="welcome">환영합니다</string>
+    <string name="logout">로그아웃</string>
+    <string name="login_header">로그인</string>
+    <string name="password">비밀번호</string>
+    <string name="enter_password">비밀번호를 입력하세요</string>
+    <string name="create_profile">프로필 생성</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="title_activity_nevigation">NevigationActivity</string>
+    <string name="ci">네트워크 연결에 실패했습니다</string>
+    <string name="nonetlogin">인터넷 연결에 실패했습니다. 비회원으로 로그인하시겠습니까?</string>
+    <string name="guest">비회원</string>
+    <string name="nonetexport">인터넷 연결에 실패했습니다. 대신 핸드폰에 저장하시겠습니까?</string>
+
+</resources>

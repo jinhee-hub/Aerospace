@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "163531338856",
+    "project_id": "drawing-app-f6285",
+    "storage_bucket": "drawing-app-f6285.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163531338856:android:e515f24237492b1d56b7dd",
+        "android_client_info": {
+          "package_name": "com.example.drawingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163531338856-2e04cn3gg733l8ooha62iv9jha18a60n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyA_82pqChXkYRrHJ5NF1Hktyd9RhnWd8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163531338856-2e04cn3gg733l8ooha62iv9jha18a60n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
