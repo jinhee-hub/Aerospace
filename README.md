@@ -1,4 +1,4 @@
-## Projects
+# Projects
 
 학부 및 대학원에서 진행했던 Project들과 일부 Lab assignment를 업로드하였습니다.
 *Airtcraft Design과 Propulsion System Design은 항공우주공학과 학부에서 진행했던 프로젝트이며,
