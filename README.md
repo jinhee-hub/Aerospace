@@ -2,8 +2,6 @@
 
 학부 및 대학원에서 진행했던 과제 및 프로젝트, 그리고 개인적으로 공부하고 구현한 프로젝트의 내용을 업로드했습니다.
 
-## Computer Science and Engineering Projects and Labs
-
 ## AI Class Projects
 
 ### Kidney Tissue Segmentation
