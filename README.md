@@ -1,11 +1,10 @@
 # Projects
 
-학부 및 대학원에서 진행했던 Project들과 일부 Lab assignment를 업로드하였습니다.
-*Airtcraft Design과 Propulsion System Design은 항공우주공학과 학부에서 진행했던 프로젝트이며,
-*MS Thesis and Publication은 항공우주공학 석사과정 때 Scramjet 관련 실험 및 논문 내용을 담고 있습니다.
-그 이외에는 컴퓨터공학과 석사과정에서 배우며 진행했던 프로젝트와 Class Lab입니다.
+학부 및 대학원에서 진행했던 과제 및 프로젝트, 그리고 개인적으로 공부하고 구현한 프로젝트의 내용을 업로드했습니다.
 
 ## Computer Science and Engineering Projects and Labs
+
+## AI Class Projects
 
 ### Kidney Tissue Segmentation
 Kaggle Competition에 있는 HuBMAP-Hacking the Kidney에 관련된 프로젝트입니다.
@@ -25,27 +24,37 @@ Competition에 필요한 모든 내용을 진행하였으며, 직접 참여하�
 4명이 팀을 이루어 진행하였으며, Drug Discovery에 사용하는 유전 정보 data와 MoA target data를 이용하였습니다.
 Regression, MLP, TabNet을 이용하였고, 저는 Kernel Logistic Regression의 implementation을 담당하였습니다.
 
-### Drawingapp
-2명이 팀을 이루어서 Android 모바일 앱을 개발한 프로젝트입니다.
-기본적인 Drawing tool, user Login환경, user의 그림을 담기 위한 Database 사용하여 Drawing App을 제작하였습니다.
+## AI Paper Implementation
+널리 알려진 Neural Network 구조에 대한 분석과 구현을 진행하였습니다.
+LeNet-5
+AlexNet
 
-### Class Lab
+## AI Personal Projects
+개인적으로 진행한 Neural Network 프로젝트 내용을 업로드 하였습니다.
+
+
+## CS Class Lab
 컴퓨터공학과 석사과정에서 진행했던 Lab들의 일부를 Upload하였습니다. 
 Apriori, Kmeans, Bisecting Cluster, MLP, RBF 등에 대한 내용을 업로드하였습니다.
 Upload한 Lab이외에도 Sentimental Anlysis(Naive Bayes, LSTM), HMM(Viterbi, forward-backword, EM), CNN, DTW, Programming Language(Type Checking) implementation 등도 하였습니다. 
 
 ## Aerospace Engineering Projects
 
-### MS Thesis and Publication
+### Aerospace Projects
+Aerospace Projects에는 항공우주공학 학부 및 석사과정에서 진행했던 프로젝트가 있습니다. 
+*Airtcraft Design과 Propulsion System Design은 항공우주공학과 학부에서 진행했던 프로젝트이며,
+*MS Thesis and Publication은 항공우주공학 석사과정 때 Scramjet 관련 실험 및 논문 내용을 담고 있습니다.
+
+#### MS Thesis and Publication
 한국항공우주연구원에서 개발하는 초음속 항공기에 사용하는 Scramjet 엔진에 필요한 Fuel Injector들의 성능을 실험하고 분석한 프로젝트입니다.
 한국추진공학회에서의 Poster 발표와 Paper publication을 하였으며, 석사학위 논문을 담고 있습니다.  
 
-### Aircraft Design (Missing some parts)
+#### Aircraft Design (Missing some parts)
 자동으로 자세 제어를 통해 목표에 도달하는 소형 aircraft를 설계 및 제작하는 프로젝트입니다. 
 학부 졸업프로젝트로 팀원들과 Engineering project Review 과정을 거쳐 진행되었습니다.
 MatLab을 이용하여 코딩하였으며 CATIA, MIDAS, Smulik 등 항공기 설계 관련 software를 이용하였습니다.
 
-### Propulsion System Design
+#### Propulsion System Design
 가스터빈 엔진을 설계하는 개인 프로젝트입니다.
 MatLab을 이용하여 관련 parameter들을 계산하였으며, CATIA를 통해 Turbine을 design하였습니다.
 
