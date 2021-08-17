@@ -20,7 +20,7 @@ Kaggle Competition의 HubMAP-hacking the kidney와 MoA Prediction 프로젝트 �
 
 컴퓨터공학과 석사과정에서 진행했던 Lab들의 일부를 Upload하였습니다. 
 
-### Aerospace Projects
+## Aerospace Projects
 
 Aerospace Projects에는 항공우주공학 학부 및 석사과정에서 진행했던 프로젝트가 있습니다. 
 
