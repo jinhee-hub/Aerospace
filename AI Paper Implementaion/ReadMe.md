@@ -6,8 +6,3 @@ Model List
 LeNet-5
 AlexNet
 GoogLeNet
-
-<<<<<<< HEAD:AI Paper Implementaion/ReadMe.txt
-=======
-AlexNet
->>>>>>> b28c943d7ab51dff822d30b9ee0277593fbaf698:AI Paper Implementaion/ReadMe.md
