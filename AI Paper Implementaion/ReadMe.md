@@ -3,6 +3,7 @@ Computer vision에 활용되는 Neural Network 모델을 공부하고 직접 구
 Colab 환경으로 작성되었고, 모델에 대한 설명과 구조, pytorch를 활용한 코드는 구현한 Colab 코드에 적어놓았습니다.
 
 Model List
+
 LeNet-5
 AlexNet
 GoogLeNet
