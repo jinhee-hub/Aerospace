@@ -9,7 +9,7 @@ Kaggle Competition의 HubMAP-hacking the kidney와 MoA Prediction 프로젝트 �
 
 ### AI Paper Implementation
 
-널리 알려진 Neural Network 구조에 대한 분석과 구현을 진행하였습니다.
+발표된 논문의 Neural Network 구조에 대한 분석과 구현을 진행하였습니다.
 
 ### AI Personal Projects
 개인적으로 진행한 Neural Network 프로젝트 내용을 업로드 하였습니다.
