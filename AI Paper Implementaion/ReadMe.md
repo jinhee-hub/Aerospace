@@ -6,6 +6,6 @@ Model List
 
 LeNet-5
 AlexNet
-GoogLeNet
+GoogLeNet 
 ResNet
 
