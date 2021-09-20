@@ -19,23 +19,16 @@ PreProcess.py
 크롤링된 웹툰 데이터를 전처리하여 학습에 사용할 수 있게 한컷한컷 분리하는 과정.
 Canny edge detection과 Morphological transformation, HoughLinesP를 사용하여 웹툰 이미지에서 하나의 컷을 분리해내는 코드.
 
-preprocess 예시
+Preprocessing 예시
 
 1. edge detection과 Morphological Transformation으로 하나의 컷이라고 인식되는 영역을 분리한다.
 
-
-![morph_transformImage](https://user-images.githubusercontent.com/54815470/133966845-33b0024a-ccaf-4104-a815-ed932bb93279.png)
-
-
-2. 분리된 한 컷의 이미지
+![MorphTFImage](https://user-images.githubusercontent.com/54815470/133968632-1e70963a-b713-487d-bd00-bbd237c53efc.png)
 
 
-![panelImage](https://user-images.githubusercontent.com/54815470/133966924-2ddeeaf5-e958-485f-b655-9100693f592b.png)
+2. 한 컷으로 선택된 영역을 분리해내고, 말풍선과 같이 그림을 그리는 사각형 박스를 넘어간 부분을 잘라낸다.
 
-
-3. 말풍선과 같이 그림을 그리는 사각형 박스를 넘어간 부분을 잘라낸다.
-
-![WebtoonImage](https://user-images.githubusercontent.com/54815470/133966994-e43e3874-2d67-4272-9bad-e8ab59fbccdb.png)
+![CropImage](https://user-images.githubusercontent.com/54815470/133968647-8a6ede78-470b-46e8-8d27-12f17bd71eee.png)
 
 
 최종적으로 사각형 박스에 잡힌 웹툰 이미지를 Data로 사용한다.
