@@ -50,10 +50,14 @@ Preprocessing 예시
 이러한 데이터는 수작업으로 다른 괜찮은 데이터로 채워넣어서 1000개의 dataset을 완성시켰다.
 동일한 방법으로 250개의 웹툰 이미지를 Test dataset으로 만들었다.
 
-# 뉴럴네트워크 모델로 그림체 분류하기
+## 뉴럴네트워크 모델로 그림체 분류하기
+
+
 
 DenseNet을 이용해서 앞의 과정을 통해 획득한 웹툰 data를 분류하는 작업을 하였습니다. 웹툰 이미지가 어떤 그림체의 웹툰인지 분류하였습니다.
 DenseNet은 제가 Github에 논문을 리뷰한 AI paper implementation의 DenseNet에서 구현한 모델을 사용하였습니다.
+
+
 
 # Generative Adverserial Network로 fake 웹툰 이미지 만들기
 
