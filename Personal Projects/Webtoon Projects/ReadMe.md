@@ -1,6 +1,6 @@
 # **웹툰 프로젝트**
 
-# Crawling.py
+### Crawling.py
 
 인터넷에서 웹툰 데이터를 크롤링해오는 코드.  혼자 공부하기 위한 용도로만 사용하였습니다.
 크롤링한 이미지는 웹툰 한컷씩 크롤링되지 않고, 여러 컷이 분리되어 합쳐져 하나의 이미지로 만들어져있었다.
@@ -14,7 +14,7 @@
 웹툰을 크롤링하면 여러 컷이 동시에 한 이미지로 묶어서 나온다.
 
 
-# PreProcess.py
+### PreProcess.py
 
 크롤링된 웹툰 데이터를 전처리하여 학습에 사용할 수 있게 한컷한컷 분리하는 과정.
 Canny edge detection과 Morphological transformation, HoughLinesP를 사용하여 웹툰 이미지에서 하나의 컷을 분리해내는 코드.
@@ -42,7 +42,7 @@ Preprocessing 예시
 5. 여백이 남아있는 컷이 일부 있었다. 여백이 남아있는 컷이 대부분은 아니지만, 무시하기에는 많았기 때문에, 이를 그대로 사용하였다. 다음에는 더 정교한 전처리과정을 통해 발전시킬 예정이다. 
 
 
-# RandExp.py
+### RandExp.py
 
 전처리 과정을 거친 이미지 중에서 1000개의 데이터만 따로 빼내어 인공지능 학습을 위한 하나의 dataset을 만들었다.
 전처리 과정을 거친 후에도 남아있는 불완전한 이미지(말풍선만 있다거나, 아무의미 없는 데이터)는 수작업으로 제거하였다.
@@ -52,6 +52,7 @@ Preprocessing 예시
 
 ## 뉴럴네트워크 모델로 그림체 분류하기
 
+### WebtoonNet.py
 
 DenseNet을 이용해서 앞의 과정을 통해 획득한 웹툰 data를 분류하는 작업을 하였습니다. 웹툰 이미지가 어떤 그림체의 웹툰인지 분류하였습니다.
 DenseNet은 제가 Github에 논문을 리뷰한 AI paper implementation의 DenseNet에서 구현한 모델을 사용하였습니다.
@@ -115,6 +116,6 @@ Predicted Labels:  ['chim', 'dreamcorp', 'nano', 'nano', 'randchat', 'tobu']
   
 %크롤링한 데이터는 웹툰 프로젝트를 위해서만 사용하였고, 프로젝트 완료 후 삭제하였습니다. 항상 재밌는 웹툰을 그려주셔서 감사합니다.
 
-# Generative Adverserial Network로 fake 웹툰 이미지 만들기
+## Generative Adverserial Network로 fake 웹툰 이미지 만들기
 
 진행중
