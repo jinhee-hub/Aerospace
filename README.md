@@ -11,8 +11,8 @@ Kaggle Competition의 HubMAP-hacking the kidney와 MoA Prediction 프로젝트 �
 
 발표된 논문의 Neural Network 구조에 대한 분석과 구현을 진행하였습니다.
 
-### AI Personal Projects
-개인적으로 진행한 AI 프로젝트 내용을 업로드 하였습니다.
+### Personal Projects
+개인적으로 진행한 프로젝트 내용을 업로드 하였습니다.
 
 ### CS Class Lab
 컴퓨터공학과 석사과정에서 진행했던 Lab Assignment들의 일부를 Upload하였습니다. 
