@@ -90,8 +90,7 @@ test loss:  0.14933344076077143     test accuracy:  0.9593333333333334
 
 마지막으로 웹툰의 Thumbnail 이미지로 테스트한 결과 완벽하지는 않지만, 모델이 어느 정도 그림체를 잘 분류하였습니다.
 
-![thums](https://user-images.githubusercontent.com/54815470/134125251-2d70360d-6331-479e-82ab-29842fecf2bf.png)
-
+![thums](https://user-images.githubusercontent.com/54815470/134125762-f7ffc7c7-775e-4ecf-aa77-9e34d8f07fad.png)
 
 True Labels:       ['chim', 'dreamcorp', 'heromaker', 'nano', 'randchat', 'tobu']
 Predicted Labels:  ['chim', 'dreamcorp', 'nano', 'nano', 'randchat', 'tobu']
