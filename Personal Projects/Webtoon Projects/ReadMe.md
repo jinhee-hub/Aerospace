@@ -100,7 +100,7 @@ epoch에 대해서 train_loss를 그래프로 나타내었습니다. 더 많이 
 
 test loss:  0.14933344076077143     test accuracy:  0.9593333333333334
 
-마지막으로 웹툰의 Thumbnail 이미지로 테스트한 결과 완벽하지는 않지만, 모델이 어느 정도 그림체를 잘 분류하였습니다.
+마지막으로 웹툰의 Thumbnail 이미지로 테스트한 결과, 완벽하지는 않지만 모델이 어느 정도 그림체를 잘 분류하였습니다.
 
 ![thums](https://user-images.githubusercontent.com/54815470/134125762-f7ffc7c7-775e-4ecf-aa77-9e34d8f07fad.png)
 
