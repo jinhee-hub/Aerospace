@@ -60,32 +60,44 @@ DenseNet은 제가 Github에 논문을 리뷰한 AI paper implementation의 Dens
 
 epoch:  0 train_loss:  0.025087374344468116
           train accuracy:  0.6981666666666667
+          
 epoch:  3 train_loss:  0.011884582887093226
           train accuracy:  0.8611666666666666
+          
 epoch:  6 train_loss:  0.008652871427436669
           train accuracy:  0.9011666666666667
+          
 epoch:  9 train_loss:  0.006698773395890991
           train accuracy:  0.9263333333333333
+          
 epoch:  12 train_loss:  0.005389556522170703
           train accuracy:  0.9365
+          
 epoch:  15 train_loss:  0.004634129839638869
           train accuracy:  0.944
+          
 epoch:  18 train_loss:  0.004011173550738022
           train accuracy:  0.9565
+          
 epoch:  21 train_loss:  0.0035094624849346776
           train accuracy:  0.9615
+          
 epoch:  24 train_loss:  0.0036466527516798427
           train accuracy:  0.9595
+          
 epoch:  27 train_loss:  0.003175077874911949
           train accuracy:  0.9651666666666666
+          
 epoch:  30 train_loss:  0.0027046352627221495
           train accuracy:  0.9688333333333333
+          
 
 epoch에 대해서 train_loss를 그래프로 나타내었습니다. 더 많이 학습할수록 loss가 감소하였습니다.
 
 ![train_loss](https://user-images.githubusercontent.com/54815470/134124116-672f3518-a052-4d77-a253-84b253c20403.png)
 
 250개의 웹툰 data로 이루어진 testset에 대해서는 95.9%의 정확도를 나타내었습니다.
+
 test loss:  0.14933344076077143     test accuracy:  0.9593333333333334
 
 마지막으로 웹툰의 Thumbnail 이미지로 테스트한 결과 완벽하지는 않지만, 모델이 어느 정도 그림체를 잘 분류하였습니다.
@@ -93,6 +105,7 @@ test loss:  0.14933344076077143     test accuracy:  0.9593333333333334
 ![thums](https://user-images.githubusercontent.com/54815470/134125762-f7ffc7c7-775e-4ecf-aa77-9e34d8f07fad.png)
 
 True Labels:       ['chim', 'dreamcorp', 'heromaker', 'nano', 'randchat', 'tobu']
+
 Predicted Labels:  ['chim', 'dreamcorp', 'nano', 'nano', 'randchat', 'tobu']
 
 썸네일로 테스트한 결과 히어로메이커를 나노마신으로 분류한 것 이외에는 그림체를 잘 분류하였습니다. 
