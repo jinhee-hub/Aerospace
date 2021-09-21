@@ -53,11 +53,55 @@ Preprocessing 예시
 ## 뉴럴네트워크 모델로 그림체 분류하기
 
 
-
 DenseNet을 이용해서 앞의 과정을 통해 획득한 웹툰 data를 분류하는 작업을 하였습니다. 웹툰 이미지가 어떤 그림체의 웹툰인지 분류하였습니다.
 DenseNet은 제가 Github에 논문을 리뷰한 AI paper implementation의 DenseNet에서 구현한 모델을 사용하였습니다.
 
+30 epochs동안 학습을 진행하였고, train_dataset에 대해서 96.9%의 높은 정확도를 보였습니다.
 
+epoch:  0 train_loss:  0.025087374344468116
+          train accuracy:  0.6981666666666667
+epoch:  3 train_loss:  0.011884582887093226
+          train accuracy:  0.8611666666666666
+epoch:  6 train_loss:  0.008652871427436669
+          train accuracy:  0.9011666666666667
+epoch:  9 train_loss:  0.006698773395890991
+          train accuracy:  0.9263333333333333
+epoch:  12 train_loss:  0.005389556522170703
+          train accuracy:  0.9365
+epoch:  15 train_loss:  0.004634129839638869
+          train accuracy:  0.944
+epoch:  18 train_loss:  0.004011173550738022
+          train accuracy:  0.9565
+epoch:  21 train_loss:  0.0035094624849346776
+          train accuracy:  0.9615
+epoch:  24 train_loss:  0.0036466527516798427
+          train accuracy:  0.9595
+epoch:  27 train_loss:  0.003175077874911949
+          train accuracy:  0.9651666666666666
+epoch:  30 train_loss:  0.0027046352627221495
+          train accuracy:  0.9688333333333333
+
+epoch에 대해서 train_loss를 그래프로 나타내었습니다. 더 많이 학습할수록 loss가 감소하였습니다.
+
+![train_loss](https://user-images.githubusercontent.com/54815470/134124116-672f3518-a052-4d77-a253-84b253c20403.png)
+
+250개의 웹툰 data로 이루어진 testset에 대해서는 95.9%의 정확도를 나타내었습니다.
+test loss:  0.14933344076077143     test accuracy:  0.9593333333333334
+
+마지막으로 웹툰의 Thumbnail 이미지로 테스트한 결과 완벽하지는 않지만, 모델이 어느 정도 그림체를 잘 분류하였습니다.
+
+![thums](https://user-images.githubusercontent.com/54815470/134125251-2d70360d-6331-479e-82ab-29842fecf2bf.png)
+
+
+True Labels:       ['chim', 'dreamcorp', 'heromaker', 'nano', 'randchat', 'tobu']
+Predicted Labels:  ['chim', 'dreamcorp', 'nano', 'nano', 'randchat', 'tobu']
+
+썸네일로 테스트한 결과 히어로메이커를 나노마신으로 분류한 것 이외에는 그림체를 잘 분류하였습니다. 
+
+%학습에 사용된 웹툰은 제가 즐겨보거나 봤던 네이버 웹툰의 6개의 웹툰 data를 사용하였습니다.
+%  chim은 "이말년시리즈", dreamcorp는 "꿈의 기업, heromaker는 "히어로메이커", nano는 "나노마신", randchat은 "랜덤채팅의 그녀!", tobu는 "하루만 네가 되고 싶어" 입니다.  
+  
+%크롤링한 데이터는 웹툰 프로젝트를 위해서만 사용하였고, 프로젝트 완료 후 삭제하였습니다. 항상 재밌는 웹툰을 그려주셔서 감사합니다.
 
 # Generative Adverserial Network로 fake 웹툰 이미지 만들기
 
