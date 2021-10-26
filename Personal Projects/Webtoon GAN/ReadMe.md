@@ -15,5 +15,7 @@ YOLOv5를 이용하여 웹툰 캐릭터 얼굴을 detection하는 경우, confid
 1. DCGAN으로 웹툰 생성하기
 
 
-2. StyleGAN으로 서로의 웹툰 그림체 
+2. StyleGAN으로 서로의 웹툰 그림체 변환시키기 
+
+
 
