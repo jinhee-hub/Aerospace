@@ -24,16 +24,27 @@ YOLOv5를 이용하여 human face로 캐릭터 얼굴을 detection하는 경우,
 Discriminator가 input으로 들어온 이미지가 진짜인지 가짜인지 혼동해야하는데 너무 확실하게 판별을 해버렸습니다.
 
 DCGAN을 이용한 학습...
+
 epoch: 0,  G_loss: 5.837123,  D_loss: 0.004208
+
 epoch: 10,  G_loss: 9.988934,  D_loss: 0.000146
+
 epoch: 20,  G_loss: 10.968609,  D_loss: 0.000043
+
 epoch: 30,  G_loss: 11.627301,  D_loss: 0.000014
+
 epoch: 40,  G_loss: 13.657906,  D_loss: 0.000003
+
 epoch: 50,  G_loss: 13.952927,  D_loss: 0.000001
+
 epoch: 60,  G_loss: 14.999187,  D_loss: 0.000001
+
 epoch: 70,  G_loss: 14.471410,  D_loss: 0.000000
+
 epoch: 80,  G_loss: 17.116364,  D_loss: 0.000000
+
 epoch: 90,  G_loss: 16.569757,  D_loss: 0.000000
+
 epoch: 100,  G_loss: 16.798510,  D_loss: 0.000000
 
 
