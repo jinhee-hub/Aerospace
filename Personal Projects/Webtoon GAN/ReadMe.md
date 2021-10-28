@@ -9,9 +9,36 @@ YOLOv5를 이용하여 human face로 캐릭터 얼굴을 detection하는 경우,
 총 600장의 웹툰 이미지(6 종류의 웹툰)를 학습시켜서 YOLOv5가 웹툰 캐릭터 얼굴을 detection하도록하였습니다. pre-trained된 YOLOv5에서 custom dataset을 학습시키는 코드는 다른 웹 사이트의 코드를 참조하여 진행하였고, 20 epochs동안 train하였고, confidence 0.7이상에 대해서만 detection하도록 하였습니다.
 전체적으로 캐릭터 얼굴 이미지를 잘 detection하였지만, 웹툰 자체에서 얼굴을 눈코입 없이 간단하게만 표현하는 경우나 얼굴과 비슷하게 생긴 물체를 detection하는 등 문제점이 일부 있어서 직접 수작업으로 안 좋은 데이터를 제거하였습니다.
 
+웹툰 하루만네가되고싶어의 썸네일 이미지를 가지고 학습된 YOLOv5로 캐릭터 얼굴을 detection한 결과
+
+![tobu detect](https://user-images.githubusercontent.com/54815470/139244588-8f10dd23-1222-4e7e-a5c6-6baa21b897c6.jpg)
+
+
 이렇게 수집한 웹툰 캐릭터 얼굴 데이터를 6 종류의 웹툰 별로 분류하여 저장하였고, 각 웹툰에 맞게 이미지를 생성시킬 수 있도록 DCGAN을 적용하였습니다.
 
 1. DCGAN으로 웹툰 생성하기
+
+결과부터 적으면.... 웹툰 이미지를 생성하는데 실패하였습니다. 
+각 웹툰별로 약 900장의 웹툰 캐릭터 데이터를 확보하였기 때문에 확보한 웹툰 데이터의 숫자가 적어서 Discriminator에서 Overfitting이 발생한 것으로 예상됩니다.
+100 epochs에 대해서 학습을 진행하였고, Generator에서는 loss가 증가하고, Discriminator에서는 loss가 감소하였습니다.
+Discriminator가 input으로 들어온 이미지가 진짜인지 가짜인지 혼동해야하는데 너무 확실하게 판별을 해버렸습니다.
+
+DCGAN을 이용한 학습...
+epoch: 0,  G_loss: 5.837123,  D_loss: 0.004208
+epoch: 10,  G_loss: 9.988934,  D_loss: 0.000146
+epoch: 20,  G_loss: 10.968609,  D_loss: 0.000043
+epoch: 30,  G_loss: 11.627301,  D_loss: 0.000014
+epoch: 40,  G_loss: 13.657906,  D_loss: 0.000003
+epoch: 50,  G_loss: 13.952927,  D_loss: 0.000001
+epoch: 60,  G_loss: 14.999187,  D_loss: 0.000001
+epoch: 70,  G_loss: 14.471410,  D_loss: 0.000000
+epoch: 80,  G_loss: 17.116364,  D_loss: 0.000000
+epoch: 90,  G_loss: 16.569757,  D_loss: 0.000000
+epoch: 100,  G_loss: 16.798510,  D_loss: 0.000000
+
+
+데이터를 20000장 이상은 확보해야 overfitting이 발생하지 않을것으로 생각되는데, 웹툰이 아직 많은 회차가 나온것이 아니라서 현실적으로 획득하기 어려울거이라고 예상합니다.
+그래서 augmentation이나 다른 overfitting을 줄일 수 있는 방법을 찾고, 더 최적화가 잘 된 GAN 모델을 찾아서 적용해볼 예정입니다.
 
 
 2. StyleGAN으로 서로의 웹툰 그림체 변환시키기 
