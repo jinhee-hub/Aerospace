@@ -31,7 +31,7 @@ DEVICE='cuda' if torch.cuda.is_available() else 'cpu'
 print(DEVICE)
 
 # 웹툰 이미지 데이터가 있는 경로 및 이미지 확인하기
-path='C:/Users/jinny/Desktop/face/'
+path='.../webtoondata/'
 imagepath=path+'nano/0.png'
 img=cv2.imread(imagepath)
 print(img.shape)
