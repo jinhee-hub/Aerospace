@@ -1,0 +1,2 @@
+Webtoon Classification
+Webtoon GAN
