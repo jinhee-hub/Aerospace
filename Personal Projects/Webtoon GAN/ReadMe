@@ -54,7 +54,7 @@ epoch: 100,  G_loss: 16.798510,  D_loss: 0.000000
 +앞으로 Data 확보 및 StyleGAN2 모델 사용 그리고 ada(Adaptive Discriminator Augmentation)를 사용하면 비교적 적은 데이터에서 웹툰이미지를 생성할 수 있을 것으로 생각됩니다.
 관련 논문과 내용을 공부한 후 적용해볼 예정입니다.
 
-2. StyleGAN으로 서로의 웹툰 그림체 변환시키기 
+2. StyleGAN2으로 서로의 웹툰 그림체 변환시키기 
 
 
 
