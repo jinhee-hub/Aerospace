@@ -114,8 +114,4 @@ Predicted Labels:  ['chim', 'dreamcorp', 'nano', 'nano', 'randchat', 'tobu']
 
 % chim은 "이말년시리즈", dreamcorp는 "꿈의 기업, heromaker는 "히어로메이커", nano는 "나노마신", randchat은 "랜덤채팅의 그녀!", tobu는 "하루만 네가 되고 싶어" 입니다.  
   
-%크롤링한 데이터는 웹툰 개인 프로젝트를 위해서만 사용하였습니다. 항상 재밌는 웹툰을 그려주셔서 감사합니다.
-
-## Generative Adverserial Network로 fake 웹툰 이미지 만들기
-
-진행중
+%크롤링한 데이터는 웹툰 개인 프로젝트를 위해서만 사용하였습니다. 
