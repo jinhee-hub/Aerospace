@@ -19,7 +19,7 @@ YOLOv5를 이용하여 human face로 캐릭터 얼굴을 detection하는 경우,
 1. DCGAN으로 웹툰 생성하기
 
 결과부터 적으면.... 웹툰 이미지를 생성하는데 실패하였습니다. 
-각 웹툰별로 약 900장의 웹툰 캐릭터 데이터를 확보하였기 때문에 확보한 웹툰 데이터의 숫자가 적어서 Discriminator에서 Overfitting이 발생한 것으로 예상됩니다.
+각 웹툰별로 약 900장의 웹툰 캐릭터 데이터를 확보하였기 때문에 확보한 웹툰 데이터의 숫자가 적어서 Discriminator에서 Overfitting이 발생한 것으로 생각합니다.
 100 epochs에 대해서 학습을 진행하였고, Generator에서는 loss가 증가하고, Discriminator에서는 loss가 감소하였습니다.
 Discriminator가 input으로 들어온 이미지가 진짜인지 가짜인지 혼동해야하는데 너무 확실하게 판별을 해버렸습니다.
 
@@ -55,6 +55,8 @@ epoch: 100,  G_loss: 16.798510,  D_loss: 0.000000
 관련 논문과 내용을 공부한 후 적용해볼 예정입니다.
 
 2. StyleGAN2 + Ada 로 서로의 웹툰 그림체 변환시키기 
+
+
 
 
 
