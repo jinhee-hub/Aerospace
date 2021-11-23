@@ -64,7 +64,7 @@ python dataset_tool.py --source=~/wtdata --dest=~/tfRecords/wtdata
 
 그 후, 학습을 진행시켰습니다. setting은 부족한 장비에서도 학습이 진행되도록 batch_size=8로 낮추고, pretrained 모델을 사용하기 위해 ffhq의 .pkl을 사용하였습니다. 또한, x-flip, ada를 통해 부족한 data 커버하고 augmentation을 진행하였습니다.
 
-python train.py --outdir=~/out --snap=1 --batch=8 --aug=ada --data=~/tfRecords/wtdata --augpipe=bgcfnc --mirror=True --metrics=None --resume=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/ffhq.pkl 
+python train.py --outdir=~/out --snap=1 --batch=8 --aug=ada --data=~/tfRecords/wtdata --augpipe=bgcfnc --mirror=True --metrics=None --resume=ffhq256
 
 개인 pc에서 약 4시간 반 정도의 학습을 진행하였습니다.
 
