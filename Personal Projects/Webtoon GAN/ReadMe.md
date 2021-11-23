@@ -15,7 +15,7 @@ YOLOv5를 이용하여 human face로 캐릭터 얼굴을 detection하는 경우,
 
 이렇게 수집한 웹툰 캐릭터 얼굴 데이터를 6 종류의 웹툰 별로 분류하여 저장하였고, 각 웹툰에 맞게 이미지를 생성시킬 수 있도록 DCGAN을 적용하였습니다.
 
-1. DCGAN으로 웹툰 생성하기
+1.DCGAN으로 웹툰 생성하기
 
 결과부터 적으면.... 웹툰 이미지를 생성하는데 실패하였습니다. 
 각 웹툰별로 약 900장의 웹툰 캐릭터 데이터를 확보하였기 때문에 확보한 웹툰 데이터의 숫자가 적어서 Discriminator에서 Overfitting이 발생한 것으로 생각합니다.
@@ -53,7 +53,7 @@ epoch: 100,  G_loss: 16.798510,  D_loss: 0.000000
 +앞으로 Data 확보 및 StyleGAN2 모델 사용 그리고 ada(Adaptive Discriminator Augmentation)를 사용하면 비교적 적은 데이터에서 웹툰이미지를 생성할 수 있을 것으로 생각됩니다.
 관련 논문과 내용을 공부한 후 적용해볼 예정입니다.
 
-2. StyleGAN2 + Ada 로 웹툰 얼굴 생성하기
+2.StyleGAN2 + Ada 로 웹툰 얼굴 생성하기
 
 Nvidia에서 구현한 StyleGAN2-ada-pytorch 모델을 바탕으로 다시 웹툰 생성을 시도하였습니다.
 ffhq dataset으로 pretrained된 모델에 1000장보다 적은 양의 웹툰 data를 사용하여 학습시켰고, 학습은 GPU RTX2060 Super를 사용하여 약 4시간 반 정도 진행하였습니다. RTX2060 Super 8GB는 NvLabs에서 만든 StyleGAN2-ada 모델의 requirement를 만족시키지 못하는 장비입니다. 이 장비로 학습시키려고 했더니 Cuda memory allocation issue가 발생하였습니다. 이를 해결하기 위해 1024x1024의 이미지를 256x256이미지로 변환하였고, batch_size도 작게 수정하여 학습을 진행하였습니다.
