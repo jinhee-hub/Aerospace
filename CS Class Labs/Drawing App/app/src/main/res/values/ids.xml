@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="tv_draw" type="id" />
-    <item name="btn_move" type="id" />
-    <item name="btn_share" type="id" />
-</resources>
