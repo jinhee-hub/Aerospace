@@ -55,6 +55,30 @@ epoch: 100,  G_loss: 16.798510,  D_loss: 0.000000
 
 2. StyleGAN2 + Ada 로 웹툰 얼굴 생성하기
 
+Nvidia에서 구현한 StyleGAN2-ada-pytorch 모델을 바탕으로 다시 웹툰 생성을 시도하였습니다.
+ffhq dataset으로 pretrained된 모델에 1000장보다 적은 양의 웹툰 data를 사용하여 학습시켰고, 학습은 GPU RTX2060 Super를 사용하여 약 4시간 반 정도 진행하였습니다. RTX2060 Super 8GB는 NvLabs에서 만든 StyleGAN2-ada 모델의 requirement를 만족시키지 못하는 장비입니다. 이 장비로 학습시키려고 했더니 Cuda memory allocation issue가 발생하였습니다. 이를 해결하기 위해 1024x1024의 이미지를 256x256이미지로 변환하였고, batch_size도 작게 수정하여 학습을 진행하였습니다.
+
+먼저 웹툰 이미지 data를 NvLabs에서 제공하는 StyleGAN2_ada 모델에 사용할 수 있도록 dataset_tool.py를 이용하여 TFRecords로 변환시켰습니다.
+
+python dataset_tool.py --source=~/wtdata --dest=~/tfRecords/wtdata
+
+그 후, 학습을 진행시켰습니다. setting은 부족한 장비에서도 학습이 진행되도록 batch_size=8로 낮추고, pretrained 모델을 사용하기 위해 ffhq의 .pkl을 사용하였습니다. 또한, x-flip, ada를 통해 부족한 data 커버하고 augmentation을 진행하였습니다.
+
+python train.py --outdir=~/out --snap=1 --batch=8 --aug=ada --data=~/tfRecords/wtdata --augpipe=bgcfnc --mirror=True --metrics=None --resume=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/ffhq.pkl 
+
+개인 pc에서 약 4시간 반 정도의 학습을 진행하였습니다.
+
+학습한 결과를 바탕으로 생성시킨 가짜 웹툰 이미지입니다. 랜덤채팅의 그녀! 웹툰 데이터만을 학습한 결과입니다. 
+
+![gen1](https://user-images.githubusercontent.com/54815470/143019655-2ca897ea-6413-424b-833c-93b96ec2aaa7.png)
+![gen2](https://user-images.githubusercontent.com/54815470/143019665-2e941067-352e-4a2a-b301-cf1320750d6f.png)
+![gen3](https://user-images.githubusercontent.com/54815470/143019630-5b2c19ba-2f61-4f34-85ad-a5bd738dca11.png)
+![gen4](https://user-images.githubusercontent.com/54815470/143019678-c269394f-15ba-4f6d-8013-25b5d7952d01.png)
+![gen5](https://user-images.githubusercontent.com/54815470/143019690-1f21fcb7-71fa-44b9-9254-3194543f3bdc.png)
+
+학습한 data수도 부족하고, 학습도 충분한 시간동안 하지 못해서 아직 부족한 결과를 내었습니다. 눈이 짝짝이거나, 머리카락이 남자인지 여자인지 애매한 경우가 가장 많았습니다. 특히, 심각했던 부분은 생성한 이미지의 형태가 실제 웹툰에 등장하는 인물과 매우 흡사하다는 점입니다. 랜덤채팅의 그녀!에 등장하는 인물들이 한정되다보니, 학습에 사용한 인물들의 디자인에 다양성이 부족하여 발생한 것으로 생각됩니다.  
+
+
 
 
 
