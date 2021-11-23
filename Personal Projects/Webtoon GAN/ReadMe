@@ -11,8 +11,7 @@ YOLOv5를 이용하여 human face로 캐릭터 얼굴을 detection하는 경우,
 
 웹툰 하루만네가되고싶어의 썸네일 이미지를 가지고 학습된 YOLOv5로 캐릭터 얼굴을 detection한 결과
 
-
-
+![tobu detect](https://user-images.githubusercontent.com/54815470/142968225-678ae409-6387-4f04-9c37-53b775671890.jpg)
 
 이렇게 수집한 웹툰 캐릭터 얼굴 데이터를 6 종류의 웹툰 별로 분류하여 저장하였고, 각 웹툰에 맞게 이미지를 생성시킬 수 있도록 DCGAN을 적용하였습니다.
 
