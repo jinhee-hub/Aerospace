@@ -4,7 +4,7 @@
 
 ### AI Paper Review and Implementation
 
-발표된 논문을 review하고 Pytorch로 구현하였습니다.
+논문을 review하고 Pytorch로 구현하였습니다.
 
 ### Personal Projects
 개인적으로 진행한 프로젝트 내용을 업로드 하였습니다.
