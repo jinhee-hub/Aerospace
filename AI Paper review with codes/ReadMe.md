@@ -3,3 +3,4 @@ Neural Network 모델을 공부하고 직접 구현하였습니다.
 Colab 환경으로 작성되었고, 논문 review를 먼저 한 후, pytorch를 활용한 코드를 작성하였습니다.
 
   
+ 
